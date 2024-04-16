@@ -42,7 +42,7 @@ public class SearchTest extends Base {
 	@Test(priority = 2)
 	public void verifySearchWithInValidProduct() {
 		searchPage=homePage.searchForAProduct(dataProp.getProperty("invalidProduct"));
-		Assert.assertEquals(searchPage.retriveNoProductMessageText(),"abcd","No Product Message in search Result Is not Displayed");
+		Assert.assertEquals(searchPage.retriveNoProductMessageText(),dataProp.getProperty("NoProductTextInSearchResults"),"No Product Message in search Result Is not Displayed");
 	    
 	}
 	

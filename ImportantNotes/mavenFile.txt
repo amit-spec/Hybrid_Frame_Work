@@ -1,0 +1,19 @@
+Download maven  from https://maven.apache.org/download.cgi
+open project in cmd
+run command mvn test
+
+Download jenkins :https://www.jenkins.io/download/
+jenkins.war file to be download
+After download run the file in cmd with command "java -jar jenkins.war"
+
+
+if You Move Your Project from one workspace to another add this
+		<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>1.6</source>
+                <target>1.6</target>
+                <encoding>UTF-8</encoding>
+            </configuration>
+          </plugin>
